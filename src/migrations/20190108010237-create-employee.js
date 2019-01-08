@@ -12,17 +12,17 @@ module.exports = {
         type: Sequelize.STRING
       },
       age: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       email: {
         type: Sequelize.STRING
       },
       createdAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE
       },
       updatedAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE
       }
     });
