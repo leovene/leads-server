@@ -1,0 +1,35 @@
+{
+  "name": "leads-server",
+  "version": "1.0.0",
+  "description": "Teste leads server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node ./src/bin/www.js",
+    "migrate": "npx sequelize db:migrate",
+    "seeds": "npx sequelize db:seed:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leovene/leads-server.git"
+  },
+  "author": "leovene",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leovene/leads-server/issues"
+  },
+  "homepage": "https://github.com/leovene/leads-server#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0",
+    "sequelize-cli": "^5.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
